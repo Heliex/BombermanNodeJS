@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %} Bomberman en temps réel !!{% endblock %}
+{% block scriptjs %}
+<script src="/js/point.js"></script>
+<script src="/js/case.js"></script>
+<script src="/js/joueur.js"></script>
+<script src="/js/animation.js"></script>
+<script src="/js/game.js"></script>
+<script src="/js/client.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+{% endblock %}
+{% block body %}
+	<h1>Vous êtes connecté en tant que : {{ session.nickname}}</h1>
+	<canvas id="gameMap" tabindex="1" width="640" height="640"> Votre navigateur ne supporte pas les canvas...Désolé...</canvas>
+	<div class="tchat" >
+	</div>
+	<div class="boxMessage">
+		<form class="messageBox" action="/" method="POST">
+			<input type="text" class='message' />
+			<input type="submit" value="Envoyer" />
+		</form>
+	</div>
+{% endblock %}
+

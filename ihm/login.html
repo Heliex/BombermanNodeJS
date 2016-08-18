@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %} Renseignez votre pseudo ! {% endblock %}
+{% block scriptjs %}
+<script src="js/login.js"></script>
+{% endblock %}
+{% block body %}
+<form class="sendNickName" action="/Bomberman" method="POST">
+	<label> Pseudo sous lequel vous souhaitez apparaitre : </label><input type="text"  name="pseudo" class="pseudo"/>
+	<input type="submit"/>
+</form>
+{% endblock %}

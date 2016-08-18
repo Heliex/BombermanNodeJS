@@ -1,0 +1,27 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cassandra-driver": "^3.1.1",
+    "connect": "^3.4.1",
+    "cookie-session": "^2.0.0-alpha.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "init": "^0.1.2",
+    "path": "^0.12.7",
+    "session.socket.io": "^0.2.1",
+    "socket.io": "^1.4.8",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Heliex",
+  "license": "ISC"
+}
